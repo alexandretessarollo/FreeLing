@@ -51,15 +51,13 @@
 #include "treeler/util/options.h"
 #include "treeler/base/exception.h"
 
-
-
 using namespace std;
 using namespace treeler;
 time_t start,end;
 double dif;
 
 static void usage(Options& options, const string message = "", string script = "") {
-  cerr << "treeler " << VERSION << " --- TALP research center, UPC 2013" << endl;
+  cerr << "treeler " << TREELER_VERSION << " --- TALP research center, UPC 2013" << endl;
   cerr << "Usage: treeler " << (script=="" ? "<scriptname>" : script) << " [options]" << endl;
 
   if (script == "") {
